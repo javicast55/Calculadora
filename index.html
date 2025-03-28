@@ -10,6 +10,38 @@
 <body>
     <form name="fo">
         <h2>POKES calculator</h2>
+        <table>
+            <tr>
+                <td colspan="5">
+                    <input type="text" onkeypress="return Onlynumbers(event)" id="value" name="values"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="8" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="9" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="+"></input></td>
+                <td><input type="button" value="-"></input></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="5" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="6" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="*"></input></td>
+                <td><input type="button" value="/"></input></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="2" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="3" onclick="Ret(value)"></input></td>
+                <td><input type="button" value="<" onclick="Del()"></input></td>
+                <td><input type="button" value="C"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" onclick="Ret(value)"></input></td>
+                <td colspan="2"><input type="button" value="="></input></td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
